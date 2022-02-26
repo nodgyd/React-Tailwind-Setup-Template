@@ -1,13 +1,11 @@
 // @ts-check
-import reactPlugin from "vite-plugin-react";
+import reactRefresh from '@vitejs/plugin-react-refresh';
 
 /**
  * @type { import('vite').UserConfig }
  */
 const config = {
-	jsx: "react",
-	plugins: [reactPlugin],
-	silent: false,
+	plugins: [reactRefresh()]
 };
 
 export default config;
